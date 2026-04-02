@@ -1,0 +1,5 @@
+d <- read.csv("/Users/zbt/Documents/MI-COG2/ischemic/Age_Trend_Plots/Age_Trend_Raw_Data/Age_Trend_RawData_4046_Time_to_complete_round_mi_vs_control.csv")
+aggregate(Raw_Change ~ Group, d, median, na.rm=TRUE)
+aggregate(delta_rate ~ Group, d, median, na.rm=TRUE)
+aggregate(IDP1 ~ Group, d, median, na.rm=TRUE)
+aggregate(IDP2 ~ Group, d, median, na.rm=TRUE)

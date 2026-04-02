@@ -3061,9 +3061,9 @@ if (RUN_PSM_MATCHING) {
   res_main <- run_psm_mi(
     dat_main, covariates, idp_cols,
     comparison = main_cmp,
-    m = 1,
-    impute_method = "median",
-    mice_maxit = 0,
+    m = 5,
+    impute_method = "mice",
+    mice_maxit = 5,
     mice_print = FALSE,
     psm_ratio = 2,
     psm_caliper = 0.2
